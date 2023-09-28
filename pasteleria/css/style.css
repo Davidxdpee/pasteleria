@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+
+	font-family: 'Merienda';
+	/* background-image: url('ruta/de/la/imagen.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: red; */
+	background-image: url('/IMG/images.jpg');
+  /* Otras propiedades de fondo según tus preferencias */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.redes a img{
+	width: 40px;
+	display: inline-block;
+	margin: 15px;
+}
+
+.info{
+	background-color: #000;
+
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+
+header{
+	max-width: 1500px;
+	margin: auto;
+	padding: 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+nav ul{
+	display: flex;
+	list-style: none;
+}
+
+nav ul li{
+	margin: 0 20px;
+}
+nav ul li a{
+	text-decoration: none;
+	color: #fff;
+	background-color: transparent;
+  /* Otras propiedades de estilo para los enlaces */
+  transition: background-color 0.3s; /
+}
+nav ul li a:hover{
+	text-decoration: underline;
+	background-color: #d7d7d73e; /* Cambia el fondo del botón a blanco solo en hover */
+
+}
+
+section{
+	padding-top: 100px;
+	text-align: center;
+}
+section h1{
+	font-size: 80px;
+	color: #fff;
+}
+section a{
+	text-decoration: none;
+	color: #fff;
+	border: 3px solid #fff;
+	padding: 10px 15px;
+	font-size: 18px;
+}
+
+
+/* LISTA DE REDES */
+.redes {
+	list-style: none; /* Elimina los marcadores de lista (viñetas) */
+	padding: 0; /* Elimina el relleno interno de la lista */
+  }
+  
+  .redes li {
+	display: inline-block; /* Hace que los elementos de lista se muestren en línea horizontalmente */
+	margin-right: 10px; /* Espacio entre los elementos de la lista (ajusta según tu preferencia) */
+	transition: transform 0.3s; /* Agrega una transición suave para la propiedad transform */
+  }
+  
+  /* Pseudoclase :hover para aumentar ligeramente el tamaño del elemento en hover */
+  .redes li:hover {
+	transform: scale(1.3); /* Aumenta el tamaño del elemento al 110% en hover */
+  }
+  
+  /* CONOCEMAS */
+ 
+
+  .conocemas {
+	background-color: transparent; /* Color de fondo por defecto */
+	transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves para el color de fondo y el tamaño */
+	padding: 20px; /* Espacio interno del section (ajusta según tu preferencia) */
+	text-align: center; /* Centra el contenido dentro del section */
+	margin-bottom: 100px;
+  }
+  
+  .conocemas:hover {
+	background-color: #333; /* Cambia el color de fondo al pasar el mouse */
+	transform: scale(1.05); /* Aumenta el tamaño del section al 105% en hover */
+  }
+  
+  .conocemas a {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #007bff;
+	color: white;
+	text-decoration: none;
+	transition: transform 0.3s; /* Transición suave para el botón */
+  }
+  
+  .conocemas a:hover {
+	transform: scale(1.1); /* Aumenta el tamaño del botón al 110% en hover */
+  }
+  
+
+
+/* CARRRUSEL */
+/* Estilos para el carrusel de imágenes */
+.slider-container {
+	position: relative;
+	width: 100%;
+	margin: 0;
+	overflow: hidden; 
+	background-color: #b37457; /* Color de fondo del carrusel */
+  }
+  
+  .slider {
+	display: flex;
+	width: 300%; /* Ajusta según la cantidad de diapositivas */
+	transition: transform 0.5s;
+  }
+  
+  .slide {
+	flex: 0 0 33.33%; /* Ajusta según la cantidad de diapositivas */
+	text-align: center;
+	position: relative;
+	padding: 20px; /* Espacio alrededor de las imágenes */
+  }
+  
+  .slide img {
+	max-width: 100%;
+	height: auto;
+  }
+  
+  /* Estilos para los botones de control */
+  .prev-button,
+  .next-button {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente que combina con el negro */
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	cursor: pointer;
+  }
+  
+  .prev-button {
+	left: 10px;
+  }
+  
+  .next-button {
+	right: 10px;
+  }
+  
+
+
+  /* FORMULARIO DE CONTACTANOS */
+  .contact-container {
+	background-color: #f2f2f2; /* Color de fondo que combina con el negro */
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	max-width: 600px; /* Ancho máximo del formulario */
+	margin: 0 auto; /* Centrar el formulario en la página */
+	margin-top: 30px; /* Espacio entre el formulario y el contenido anterior */
+}
+
+.contact-container h2 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.form-group {
+	margin-bottom: 20px;
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 16px;
+}
+
+button[type="submit"] {
+	background-color: #007bff;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	display: block;
+	margin: 0 auto; /* Centrar el botón */
+}
+
+
+footer {
+	background-color: #FF69B4; /* Fondo de color que distingue y combina */
+	color: #555; /* Color de texto para el footer */
+	padding: 20px 0; /* Espacio interno en el footer */
+	text-align: center; /* Alineación del contenido del footer */
+	width: 100%; /* Ocupa todo el ancho horizontal */
+	bottom: 0; /* Alinea el footer en la parte inferior */
+	margin-top: 30px;
+}
